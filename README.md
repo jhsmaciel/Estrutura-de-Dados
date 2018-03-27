@@ -1,1 +1,4 @@
-# Estrutura de Dados, matéria do terceiro semestre de ADS, professora Andreia.
+# Estrutura de Dados
+Matéria do terceiro semestre do curso de ADS;
+Professora Andréia;
+Segundas-feiras;
