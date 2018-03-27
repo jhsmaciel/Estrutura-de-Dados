@@ -13,7 +13,7 @@ public class ListaLigada {
 	public int removeInicio() {
 		int r = -1;
 		if (inicio == null) {
-			System.out.println("Lista vazia cuzão");
+			System.out.println("Lista vazia!");
 		} else {
 			r = inicio.dado;
 			inicio = inicio.prox;
