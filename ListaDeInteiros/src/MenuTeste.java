@@ -7,19 +7,25 @@ import javax.swing.JOptionPane;
 public class MenuTeste {
     public static void main (String arg[]){
         ListaDeInteiros lista1 = new ListaDeInteiros(4);
-        int op=0,x ;
-        String str;
-            while (op!=100){
-            op = Integer.parseInt(JOptionPane.showInputDialog("Menu \n"+
-                    "1-Adiciona In√≠cio\n2-Adiciona Final\n3-Adiciona em Posi√ß√£o\n4-Remove In√≠cio\n5-Remove Final\n6-Remove Posi√ß√£o\n7-Primeiro Elemento\n8-√öltimo Elemento\n9-Todos Elementos\n100-Sair"));
+        int op=0 ;
+            while (op!=10){
+            op = Integer.parseInt(JOptionPane.showInputDialog("Menu \n"
+            		+"1-Adiciona Inicio\n"
+                    + "2-Adiciona Final\n"
+                    + "3-Adiciona em PosiÁ„o\n"
+                    + "4-Remove Inicio\n"
+                    + "5-Remove Final\n"
+                    + "6-Remove PosiÁ„o\n"
+                    + "7-Primeiro Elemento\n"
+                    + "8-⁄ltimo Elemento\n"
+                    + "9-Todos Elementos\n"
+                    + "10-Sair"));
                 switch (op){
                     case 1: 
-                        x = Integer.parseInt(JOptionPane.showInputDialog("Value Inicio?"));
-                        lista1.adicionaInicio(x);
+                        lista1.adicionaInicio(Integer.parseInt(JOptionPane.showInputDialog("Value Inicio?")));
                         break;
                     case 2: 
-                        x = Integer.parseInt(JOptionPane.showInputDialog("Value Final?"));
-                        lista1.adicionaFinal(x);
+                    	lista1.adicionaFinal(Integer.parseInt(JOptionPane.showInputDialog("Value Final?")));
                         break;
                     case 3: 
                         JOptionPane.showMessageDialog(null,"Removido: ");
@@ -43,10 +49,10 @@ public class MenuTeste {
                         JOptionPane.showMessageDialog(null,lista1.toString());
                         break;    
                     case 100: 
-                     JOptionPane.showMessageDialog(null,"At√© mais");
+                     JOptionPane.showMessageDialog(null,"AtÈ mais");
                         break;        
                     default :
-                     JOptionPane.showMessageDialog(null,"Valor Inv√°lido.");
+                     JOptionPane.showMessageDialog(null,"Valor Inv·lido.");
             }    
         }
       System.exit(0);
