@@ -28,7 +28,7 @@ public class MenuTeste {
                     	lista1.adicionaFinal(Integer.parseInt(JOptionPane.showInputDialog("Value Final?")));
                         break;
                     case 3: 
-                        JOptionPane.showMessageDialog(null,"Removido: ");
+                         lista1.adicionaPosicao();
                         break;    
                     case 4: 
                         JOptionPane.showMessageDialog(null,"Removido: "+lista1.removeInicio());
@@ -48,7 +48,7 @@ public class MenuTeste {
                     case 9: 
                         JOptionPane.showMessageDialog(null,lista1.toString());
                         break;    
-                    case 100: 
+                    case 10: 
                      JOptionPane.showMessageDialog(null,"Até mais");
                         break;        
                     default :
